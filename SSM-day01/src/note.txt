@@ -7,3 +7,6 @@ DI：
     @component     公共组件
     @controller   SpringMVC 控制用户请求
     @autoWired    需要用到那个类  ，用该注解注入
+
+
+

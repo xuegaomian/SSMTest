@@ -17,4 +17,8 @@ public class Logger {
             throwable.printStackTrace();
         }
     }
+
+    public void doAfter(){
+        System.out.println("After");
+    }
 }

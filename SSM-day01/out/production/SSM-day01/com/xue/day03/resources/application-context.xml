@@ -30,5 +30,15 @@
         <property name="fatherName" value="张三他爸"/>
         <property name="user" ref="user"/>
     </bean>
-    <aop:aspectj-autoproxy/>
+    <!--基于注解来实现aop-->
+    <!--<aop:aspectj-autoproxy/>-->
+    <!--基于xml来实现aop-->
+    <bean id="logger" class="com.xue.day03.aop.Logger"/>
+    <aop:config>
+        <aop:aspect id="logAscept" ref="logger">
+            <aop:around method="doLogger" pointcut="execution(* com.xue.day03.Service.*.*(..))"/>
+            <aop:after method="doAfter" pointcut="execution(* com.xue.day03.Service.*.*(..))"/>
+        </aop:aspect>
+    </aop:config>
+
 </beans>

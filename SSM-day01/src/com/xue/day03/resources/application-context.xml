@@ -36,7 +36,8 @@
     <bean id="logger" class="com.xue.day03.aop.Logger"/>
     <aop:config>
         <aop:aspect id="logAscept" ref="logger">
-            <aop:around method="doLog" pointcut="execution(* com.xue.day03.Service.*.*(..))"/>l0
+            <aop:around method="doLogger" pointcut="execution(* com.xue.day03.Service.*.*(..))"/>
+            <aop:after method="doAfter" pointcut="execution(* com.xue.day03.Service.*.*(..))"/>
         </aop:aspect>
     </aop:config>
 
