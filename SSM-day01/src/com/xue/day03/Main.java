@@ -20,7 +20,7 @@ public class Main {
                new ClassPathXmlApplicationContext("./com/xue/day03/resources/application-context.xml");
         UserFather userFather = (UserFather) context1.getBean(UserFather.class);
 
-        System.out.println(userFather);
+        //System.out.println(userFather);
 
         /*关于@Service注解*/
         UserController userController = (UserController) context1.getBean(UserController.class);
