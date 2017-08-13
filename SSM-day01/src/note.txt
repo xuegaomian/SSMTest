@@ -1,0 +1,9 @@
+Spring 核心  依赖注入 DI    切面编程AOP
+DI：
+    框架的作用：框架只需要处理业务逻辑，框架帮我们解决了最基本的耦合度
+
+    注解方式注入
+    @service      业务层
+    @component     公共组件
+    @controller   SpringMVC 控制用户请求
+    @autoWired    需要用到那个类  ，用该注解注入
