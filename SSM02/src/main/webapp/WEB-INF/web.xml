@@ -1,0 +1,27 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+
+  <servlet>
+    <servlet-name>ssm-demo</servlet-name>
+    <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+    <!-- 配置SpringMVC需要加载的文件 -->
+    <!-- spring-dao.xml, spring-service.xml, spring-web.xml -->
+    <!-- MyBatis -> spring -> springMVC -->
+    <!-- 告诉SpringMVC，Spring有哪些配置文件 -->
+    <init-param>
+      <!--说明spring.xml的位置-->
+      <param-name>contextConfigLocation</param-name>
+      <param-value>classpath:spring-mvc.xml</param-value>
+    </init-param>
+    <!--表示工程一起动就加载，优先级高-->
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ssm-demo</servlet-name>
+    <!--默认匹配所有请求-->
+    <url-pattern>/</url-pattern>
+  </servlet-mapping>
+</web-app>

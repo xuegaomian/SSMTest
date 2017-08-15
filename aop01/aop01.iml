@@ -12,5 +12,10 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Maven: org.aspectj:aspectjweaver:1.8.7" level="project" />
+    <orderEntry type="library" name="Maven: cglib:cglib-nodep:2.2" level="project" />
+    <orderEntry type="library" name="Maven: asm:asm-commons:2.2.3" level="project" />
+    <orderEntry type="library" name="Maven: asm:asm-tree:2.2.3" level="project" />
+    <orderEntry type="library" name="Maven: asm:asm-util:2.2.3" level="project" />
+    <orderEntry type="library" name="Maven: asm:asm:2.2.3" level="project" />
   </component>
 </module>

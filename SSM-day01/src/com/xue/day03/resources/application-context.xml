@@ -15,7 +15,7 @@
 >
     <!--组件扫描，扫描day03下的所有带组件注解的包，如@Service@controller（不只是service，还可能有controller）-->
     <context:component-scan base-package="com.xue.day03.*"/>
-    <!--自动代理aop-->
+
 
     <bean id="user" class="com.xue.day03.po.User">
       <!--  根据构造器初始化bean
@@ -30,7 +30,7 @@
         <property name="fatherName" value="张三他爸"/>
         <property name="user" ref="user"/>
     </bean>
-    <!--基于注解来实现aop-->
+    <!--基于注解来实现aop--><!--自动代理aop-->
     <!--<aop:aspectj-autoproxy/>-->
     <!--基于xml来实现aop-->
     <bean id="logger" class="com.xue.day03.aop.Logger"/>
