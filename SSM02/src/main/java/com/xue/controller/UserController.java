@@ -1,12 +1,20 @@
 package com.xue.controller;
 
 import com.xue.po.User;
+import org.apache.commons.io.FileUtils;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.http.HttpServletRequest;
+import java.io.File;
+import java.io.IOException;
 
 @Controller
 @RequestMapping("user")
@@ -72,6 +80,31 @@ public class UserController{
         return "user";
     }
 
+    @RequestMapping("/uploadTest")
+    public String uploadTest(){
+        return "upload";
+    }
+    @RequestMapping("/upload")
+    public String  upload (MultipartFile file, HttpServletRequest request) throws IOException {
+        String name=file.getOriginalFilename();
+        //文件保存的路径
+        File uploadF=new File("/"+name);
+        file.transferTo(uploadF);
+
+        System.out.println(uploadF);
+        return "user";
+    }
+
+    /*下载*/
+    @RequestMapping("/download")
+    public ResponseEntity<byte[]> download() throws IOException {
+        String path="D:\\1.png";
+        File file=new File(path);
+        HttpHeaders headers=new HttpHeaders();
+        headers.setContentDispositionFormData("attzchment",path);
+        headers.setContentType(MediaType.IMAGE_PNG);
+        return new ResponseEntity<byte[]>(FileUtils.readFileToByteArray(file),headers, HttpStatus.CREATED);
+    }
 
 
 

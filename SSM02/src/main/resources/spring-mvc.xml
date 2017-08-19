@@ -54,6 +54,7 @@
         </mvc:interceptor>
     </mvc:interceptors>
 
+    <!--文件上传下载-->
     <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
        <!--文件上传过程中在内存中最多流多少，超过设置值就刷到硬盘-->
         <property name="maxInMemorySize" value="500000"/>
