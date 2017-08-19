@@ -42,4 +42,25 @@
         <property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
     </bean>
 
+    <!--配置springmvc拦截器-->
+    <mvc:interceptors>
+        <!--默认拦截所有请求-->
+        <!--<bean class="com.xue.interceptor.SpringMvcInterceptor"/>-->
+
+        <!--可以配置需要拦截的请求-->
+        <mvc:interceptor>
+            <mvc:mapping path="/user/testjson"/>
+            <bean class="com.xue.interceptor.SpringMvcInterceptor"/>
+        </mvc:interceptor>
+    </mvc:interceptors>
+
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+       <!--文件上传过程中在内存中最多流多少，超过设置值就刷到硬盘-->
+        <property name="maxInMemorySize" value="500000"/>
+        <!--最大上传大小-->
+        <property name="maxUploadSize" value="500000"/>
+        <!--编码-->
+        <property name="defaultEncoding" value="utf-8"/>
+    </bean>
+
 </beans>

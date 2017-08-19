@@ -42,4 +42,16 @@
         <property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
     </bean>
 
+    <!--配置springmvc拦截器-->
+    <mvc:interceptors>
+        <!--默认拦截所有请求-->
+        <!--<bean class="com.xue.interceptor.SpringMvcInterceptor"/>-->
+
+        <!--可以配置需要拦截的请求-->
+        <mvc:interceptor>
+            <mvc:mapping path="/user/testjson"/>
+            <bean class="com.xue.interceptor.SpringMvcInterceptor"/>
+        </mvc:interceptor>
+    </mvc:interceptors>
+
 </beans>

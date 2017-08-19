@@ -10,6 +10,7 @@
           <element id="library" level="project" name="Maven: jstl:jstl:1.2" />
           <element id="file-copy" path="$MAVEN_REPOSITORY$/aopalliance/aopalliance/1.0/aopalliance-1.0.jar" />
           <element id="file-copy" path="$MAVEN_REPOSITORY$/commons-logging/commons-logging/1.2/commons-logging-1.2.jar" />
+          <element id="file-copy" path="$MAVEN_REPOSITORY$/com/alibaba/fastjson/1.2.20/fastjson-1.2.20.jar" />
           <element id="file-copy" path="$MAVEN_REPOSITORY$/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar" />
           <element id="file-copy" path="$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.3.5.RELEASE/spring-aop-4.3.5.RELEASE.jar" />
           <element id="file-copy" path="$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.3.5.RELEASE/spring-beans-4.3.5.RELEASE.jar" />
@@ -18,7 +19,6 @@
           <element id="file-copy" path="$MAVEN_REPOSITORY$/org/springframework/spring-expression/4.3.5.RELEASE/spring-expression-4.3.5.RELEASE.jar" />
           <element id="file-copy" path="$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.5.RELEASE/spring-web-4.3.5.RELEASE.jar" />
           <element id="file-copy" path="$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.5.RELEASE/spring-webmvc-4.3.5.RELEASE.jar" />
-          <element id="file-copy" path="$MAVEN_REPOSITORY$/com/alibaba/fastjson/1.2.20/fastjson-1.2.20.jar" />
         </element>
       </element>
       <element id="directory" name="META-INF">
