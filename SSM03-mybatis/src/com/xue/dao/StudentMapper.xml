@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xue.dao.StudentMapper">
+    <!--id 对每个mapper进行识别   type是查询出的结果集对应哪个实体类-->
+    <resultMap id="studentMapper" type="com.xue.po.Student">
+        <id column="id" property="sid"/>
+        <result column="name" property="sname"/>
+        <result column="sex" property="ssex"/>
+        <result column="age" property="sage"/>
+    </resultMap>
+    <insert id="insertStudent" parameterType="com.xue.po.Student">
+        INSERT INTO stu (id,name,sex,age) VALUE (#{sid},#{sname},#{ssex},#{sage})
+    </insert>
+    <select id="selectOneById" parameterType="int" resultType="com.xue.po.Student">
+        SELECT * FROM stu WHERE id=#{sid}
+    </select>
+
+</mapper>
