@@ -10,11 +10,17 @@
         <result column="sex" property="ssex"/>
         <result column="age" property="sage"/>
     </resultMap>
+
     <insert id="insertStudent" parameterType="com.xue.po.Student">
-        INSERT INTO stu (id,name,sex,age) VALUE (#{sid},#{sname},#{ssex},#{sage})
+        INSERT INTO stu (stu.id,stu.name,stu.sex,stu.age) VALUE (#{sid},#{sname},#{ssex},#{sage})
     </insert>
-    <select id="selectOneById" parameterType="int" resultType="com.xue.po.Student">
+    <!--将查询出的结果映射到studentMapper中对应的实体类-->
+    <select id="selectOneById" resultMap="studentMapper">
         SELECT * FROM stu WHERE id=#{sid}
+    </select>
+
+    <select id="seleceAllGoods" resultMap="studentMapper">
+        SELECT * FROM stu
     </select>
 
 </mapper>
