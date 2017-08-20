@@ -3,12 +3,17 @@ package com.xue.dao;
 
 import com.xue.po.Student;
 
-import java.util.List;
-
 public interface StudentMapper {
-    int insertStudent(Student student)throws Exception;
+    int deleteByPrimaryKey(Integer id);
 
-    Student selectOneById(int id)throws Exception;
+    int insert(Student record);
 
-    List<Student> seleceAllGoods()throws Exception;
+    int insertSelective(Student record);
+
+    Student selectByPrimaryKey(Integer id);
+    Student selectByPrimaryKeyWithHobby(Integer id);
+
+    int updateByPrimaryKeySelective(Student record);
+
+    int updateByPrimaryKey(Student record);
 }

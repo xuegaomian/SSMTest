@@ -33,14 +33,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="StudentMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/xue/dao/StudentMapper.java">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="12" column="6" lean-forward="false" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+            <state relative-caret-position="291">
+              <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StudentMapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/xue/dao/StudentMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="13" column="52" lean-forward="false" selection-start-line="13" selection-start-column="52" selection-end-line="13" selection-end-column="52" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -48,21 +58,34 @@
       <file leaf-file-name="Student.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/xue/po/Student.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="161">
+              <caret line="15" column="12" lean-forward="true" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="22" />
+              <folding>
+                <element signature="e#240#241#0" expanded="true" />
+                <element signature="e#270#271#0" expanded="true" />
+                <element signature="e#321#322#0" expanded="true" />
+                <element signature="e#359#360#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HobbyMapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/xue/dao/HobbyMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="15" column="44" lean-forward="true" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <file leaf-file-name="Hobby.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/xue/po/Hobby.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="27" column="39" lean-forward="true" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="184">
+              <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -70,23 +93,16 @@
       <file leaf-file-name="StudentMapper.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/xue/dao/StudentMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
-              <caret line="22" column="8" lean-forward="false" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="25" />
+            <state relative-caret-position="-414">
+              <caret line="13" column="51" lean-forward="true" selection-start-line="13" selection-start-column="51" selection-end-line="13" selection-end-column="51" />
               <folding>
-                <marker date="1503194660907" expanded="true" signature="599:688" ph="INSERT INTO stu... " />
-                <marker date="1503194660907" expanded="true" signature="811:844" ph="SELECT * FRO... stu" />
-                <marker date="1503194660907" expanded="true" signature="927:944" ph="SELECT * FRO... stu" />
+                <marker date="1503220789457" expanded="true" signature="1079:1178" ph="select from stu" />
+                <marker date="1503220789457" expanded="true" signature="1325:1482" ph="select ,hobb... " />
+                <marker date="1503220789457" expanded="true" signature="1569:1622" ph="delete from " />
+                <marker date="1503220789457" expanded="true" signature="1698:1860" ph="insert into stu... " />
+                <marker date="1503220789457" expanded="true" signature="2724:3043" ph="update stu n... " />
+                <marker date="1503220789457" expanded="true" signature="3131:3293" ph="update stu s... " />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jdbc.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/xue/resources/jdbc.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="1" column="41" lean-forward="false" selection-start-line="1" selection-start-column="41" selection-end-line="1" selection-end-column="41" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -101,6 +117,23 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="HobbyMapper.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/xue/dao/HobbyMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="69">
+              <caret line="3" column="2" lean-forward="true" selection-start-line="3" selection-start-column="2" selection-end-line="8" selection-end-column="14" />
+              <folding>
+                <marker date="1503215465041" expanded="true" signature="1028:1187" ph="select ,id, " />
+                <marker date="1503215465041" expanded="true" signature="1301:1401" ph="select from hobby" />
+                <marker date="1503215465041" expanded="true" signature="1490:1545" ph="delete from " />
+                <marker date="1503215465041" expanded="true" signature="1619:1755" ph="insert into hobby... " />
+                <marker date="1503215465041" expanded="true" signature="2489:2731" ph="update hobby... " />
+                <marker date="1503215465041" expanded="true" signature="2817:2946" ph="update hobby... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="GradleLocalSettings">
@@ -111,12 +144,15 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/xue/po/Student.java" />
         <option value="$PROJECT_DIR$/src/com/xue/resources/mybatis-config.xml" />
-        <option value="$PROJECT_DIR$/src/com/xue/dao/StudentMapper.xml" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/cc2e748c-d690-4abb-96d4-d79a22ff7387/console.sql" />
+        <option value="$PROJECT_DIR$/src/com/xue/dao/HobbyMapper.java" />
+        <option value="$PROJECT_DIR$/src/com/xue/dao/HobbyMapper.xml" />
+        <option value="$PROJECT_DIR$/src/com/xue/po/Student.java" />
         <option value="$PROJECT_DIR$/src/com/xue/dao/StudentMapper.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/cc2e748c-d690-4abb-96d4-d79a22ff7387/console.sql" />
         <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/xue/dao/StudentMapper.xml" />
+        <option value="$PROJECT_DIR$/src/com/xue/po/Hobby.java" />
       </list>
     </option>
   </component>
@@ -187,6 +223,13 @@
               <item name="SSM03-mybatis" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="xue" type="462c0819:PsiDirectoryNode" />
+              <item name="po" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SSM03-mybatis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SSM03-mybatis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="xue" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -212,14 +255,17 @@
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL&#10;DB2 (JTOpen)" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\ideaTest\SSMTest\SSM03-mybatis\src\com\xue\po" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.xue.po" />
       <recent name="" />
       <recent name="com.xue.dao" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\ideaTest\SSMTest\SSM03-mybatis\src\com\xue\resources" />
       <recent name="E:\ideaTest\SSMTest\SSM03-mybatis\src\com\xue\dao" />
+      <recent name="E:\ideaTest\SSMTest\SSM03-mybatis\src\com\xue\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -345,12 +391,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1503190140968</updated>
-      <workItem from="1503190144296" duration="3921000" />
+      <workItem from="1503190144296" duration="11814000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3921000" />
+    <option name="totallyTimeSpent" value="11814000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
@@ -376,7 +422,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3651316" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -397,26 +443,9 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>16</line>
-          <properties />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>24</line>
-          <properties />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>25</line>
+          <line>27</line>
           <properties />
           <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>23</line>
-          <properties />
-          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
       <option name="time" value="5" />
@@ -424,10 +453,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/xue/po/Student.java">
+    <entry file="file://$PROJECT_DIR$/src/com/xue/resources/jdbc.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="23">
+          <caret line="1" column="41" lean-forward="false" selection-start-line="1" selection-start-column="41" selection-end-line="1" selection-end-column="41" />
           <folding />
         </state>
       </provider>
@@ -440,11 +469,62 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/xue/resources/jdbc.properties">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/cc2e748c-d690-4abb-96d4-d79a22ff7387/console.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" column="41" lean-forward="false" selection-start-line="1" selection-start-column="41" selection-end-line="1" selection-end-column="41" />
+        <state relative-caret-position="92">
+          <caret line="4" column="24" lean-forward="true" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/xue/po/Student.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="15" column="12" lean-forward="true" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="22" />
+          <folding>
+            <element signature="e#240#241#0" expanded="true" />
+            <element signature="e#270#271#0" expanded="true" />
+            <element signature="e#321#322#0" expanded="true" />
+            <element signature="e#359#360#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/xue/dao/HobbyMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="15" column="44" lean-forward="true" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/xue/dao/StudentMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="13" column="52" lean-forward="false" selection-start-line="13" selection-start-column="52" selection-end-line="13" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/xue/dao/HobbyMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="2" lean-forward="true" selection-start-line="3" selection-start-column="2" selection-end-line="8" selection-end-column="14" />
+          <folding>
+            <marker date="1503215465041" expanded="true" signature="1028:1187" ph="select ,id, " />
+            <marker date="1503215465041" expanded="true" signature="1301:1401" ph="select from hobby" />
+            <marker date="1503215465041" expanded="true" signature="1490:1545" ph="delete from " />
+            <marker date="1503215465041" expanded="true" signature="1619:1755" ph="insert into hobby... " />
+            <marker date="1503215465041" expanded="true" signature="2489:2731" ph="update hobby... " />
+            <marker date="1503215465041" expanded="true" signature="2817:2946" ph="update hobby... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/8154156d/cc2e748c-d690-4abb-96d4-d79a22ff7387/1602.hobby">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -455,43 +535,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/cc2e748c-d690-4abb-96d4-d79a22ff7387/console.sql">
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="17" lean-forward="false" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="17" />
-          <folding />
+        <state relative-caret-position="291">
+          <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/xue/dao/StudentMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="22" column="8" lean-forward="false" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="25" />
+        <state relative-caret-position="-414">
+          <caret line="13" column="51" lean-forward="true" selection-start-line="13" selection-start-column="51" selection-end-line="13" selection-end-column="51" />
           <folding>
-            <marker date="1503194660907" expanded="true" signature="599:688" ph="INSERT INTO stu... " />
-            <marker date="1503194660907" expanded="true" signature="811:844" ph="SELECT * FRO... stu" />
-            <marker date="1503194660907" expanded="true" signature="927:944" ph="SELECT * FRO... stu" />
+            <marker date="1503220789457" expanded="true" signature="1079:1178" ph="select from stu" />
+            <marker date="1503220789457" expanded="true" signature="1325:1482" ph="select ,hobb... " />
+            <marker date="1503220789457" expanded="true" signature="1569:1622" ph="delete from " />
+            <marker date="1503220789457" expanded="true" signature="1698:1860" ph="insert into stu... " />
+            <marker date="1503220789457" expanded="true" signature="2724:3043" ph="update stu n... " />
+            <marker date="1503220789457" expanded="true" signature="3131:3293" ph="update stu s... " />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/xue/dao/StudentMapper.java">
+    <entry file="file://$PROJECT_DIR$/src/com/xue/po/Hobby.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="12" column="6" lean-forward="false" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="27" column="39" lean-forward="true" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="184">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -1,50 +1,55 @@
 package com.xue.po;
 
+import java.util.List;
+
 public class Student {
-    private int sid;
-    private String sname;
-    private String ssex;
-    private int sage;
+    private Integer id;
 
-    public int getSid() {
-        return sid;
+    private String name;
+
+    private String sex;
+
+    private Integer age;
+
+    private List<Hobby> hobbies;
+
+    public List<Hobby> getHobbies() {
+        return hobbies;
     }
 
-    public void setSid(int sid) {
-        this.sid = sid;
+    public void setHobbies(List<Hobby> hobbies) {
+        this.hobbies = hobbies;
     }
 
-    public String getSname() {
-        return sname;
+    public Integer getId() {
+        return id;
     }
 
-    public void setSname(String sname) {
-        this.sname = sname;
+    public void setId(Integer id) {
+        this.id = id;
     }
 
-    public String getSsex() {
-        return ssex;
+    public String getName() {
+        return name;
     }
 
-    public void setSsex(String ssex) {
-        this.ssex = ssex;
+    public void setName(String name) {
+        this.name = name == null ? null : name.trim();
     }
 
-    public int getSage() {
-        return sage;
+    public String getSex() {
+        return sex;
     }
 
-    public void setSage(int sage) {
-        this.sage = sage;
+    public void setSex(String sex) {
+        this.sex = sex == null ? null : sex.trim();
     }
 
-    @Override
-    public String toString() {
-        return "Student{" +
-                "sid=" + sid +
-                ", sname='" + sname + '\'' +
-                ", ssex='" + ssex + '\'' +
-                ", sage=" + sage +
-                '}';
+    public Integer getAge() {
+        return age;
+    }
+
+    public void setAge(Integer age) {
+        this.age = age;
     }
 }

@@ -1,26 +1,101 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<!DOCTYPE mapper
-        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
-        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.xue.dao.StudentMapper">
-    <!--id 对每个mapper进行识别   type是查询出的结果集对应哪个实体类-->
-    <resultMap id="studentMapper" type="com.xue.po.Student">
-        <id column="id" property="sid"/>
-        <result column="name" property="sname"/>
-        <result column="sex" property="ssex"/>
-        <result column="age" property="sage"/>
-    </resultMap>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.xue.dao.StudentMapper" >
+  <resultMap id="BaseResultMap" type="com.xue.po.Student" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="name" property="name" jdbcType="VARCHAR" />
+    <result column="sex" property="sex" jdbcType="VARCHAR" />
+    <result column="age" property="age" jdbcType="INTEGER" />
+    <!--一对多需要使用collection将两个ResultMap连接-->
+    <collection property="hobbies" resultMap="HobbyResultMap"/>
+  </resultMap>
 
-    <insert id="insertStudent" parameterType="com.xue.po.Student">
-        INSERT INTO stu (stu.id,stu.name,stu.sex,stu.age) VALUE (#{sid},#{sname},#{ssex},#{sage})
-    </insert>
-    <!--将查询出的结果映射到studentMapper中对应的实体类-->
-    <select id="selectOneById" resultMap="studentMapper">
-        SELECT * FROM stu WHERE id=#{sid}
-    </select>
+  <!--添加ResultMap完成一对多查询-->
+  <resultMap id="HobbyResultMap" type="com.xue.po.Hobby" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="hname" property="hname" jdbcType="VARCHAR" />
+    <result column="sid" property="sid" jdbcType="INTEGER" />
+  </resultMap>
 
-    <select id="seleceAllGoods" resultMap="studentMapper">
-        SELECT * FROM stu
-    </select>
 
+  <sql id="Base_Column_List" >
+    stu.id, name, sex, age
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from stu
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+    <!--一对多查询一个学生多个爱好-->
+  <select id="selectByPrimaryKeyWithHobby" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select
+    <include refid="Base_Column_List" />,hobby.id, hname, sid
+    from stu
+    LEFT JOIN hobby ON stu.id=sid
+    where stu.id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from stu
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.xue.po.Student" >
+    insert into stu (id, name, sex, 
+      age)
+    values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{sex,jdbcType=VARCHAR}, 
+      #{age,jdbcType=INTEGER})
+  </insert>
+  <insert id="insertSelective" parameterType="com.xue.po.Student" >
+    insert into stu
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="name != null" >
+        name,
+      </if>
+      <if test="sex != null" >
+        sex,
+      </if>
+      <if test="age != null" >
+        age,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="name != null" >
+        #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="sex != null" >
+        #{sex,jdbcType=VARCHAR},
+      </if>
+      <if test="age != null" >
+        #{age,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.xue.po.Student" >
+    update stu
+    <set >
+      <if test="name != null" >
+        name = #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="sex != null" >
+        sex = #{sex,jdbcType=VARCHAR},
+      </if>
+      <if test="age != null" >
+        age = #{age,jdbcType=INTEGER},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.xue.po.Student" >
+    update stu
+    set name = #{name,jdbcType=VARCHAR},
+      sex = #{sex,jdbcType=VARCHAR},
+      age = #{age,jdbcType=INTEGER}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
 </mapper>
