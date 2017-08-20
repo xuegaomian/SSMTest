@@ -32,7 +32,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/xue/dao/StudentMapper.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="184">
-              <caret line="8" column="26" lean-forward="true" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="32" />
+              <caret line="8" column="26" lean-forward="false" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -64,7 +64,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/xue/dao/StudentMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="259">
-              <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding>
                 <marker date="1503190950089" expanded="true" signature="598:671" ph="INSERT INTO stu... " />
                 <marker date="1503190950089" expanded="true" signature="778:811" ph="SELECT * FRO... stu" />
@@ -106,8 +106,8 @@
         <option value="$PROJECT_DIR$/src/com/xue/po/Student.java" />
         <option value="$PROJECT_DIR$/src/com/xue/dao/StudentMapper.java" />
         <option value="$PROJECT_DIR$/src/com/xue/resources/mybatis-config.xml" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/com/xue/dao/StudentMapper.xml" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
       </list>
     </option>
   </component>
@@ -335,12 +335,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1503190140968</updated>
-      <workItem from="1503190144296" duration="817000" />
+      <workItem from="1503190144296" duration="1434000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="817000" />
+    <option name="totallyTimeSpent" value="1434000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
@@ -441,7 +441,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/xue/dao/StudentMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
-          <caret line="8" column="26" lean-forward="true" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="32" />
+          <caret line="8" column="26" lean-forward="false" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="32" />
           <folding />
         </state>
       </provider>
@@ -449,7 +449,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/xue/dao/StudentMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="259">
-          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding>
             <marker date="1503190950089" expanded="true" signature="598:671" ph="INSERT INTO stu... " />
             <marker date="1503190950089" expanded="true" signature="778:811" ph="SELECT * FRO... stu" />

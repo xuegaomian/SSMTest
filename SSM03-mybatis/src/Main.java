@@ -22,6 +22,7 @@ public class Main {
         Student student=mapper.selectOneById(1);
         session.commit();
         session.close();
+        System.out.println(student);
     }
 
 
