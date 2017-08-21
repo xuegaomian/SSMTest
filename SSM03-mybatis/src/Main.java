@@ -1,6 +1,6 @@
-import com.xue.dao.HobbyMapper;
+
 import com.xue.dao.StudentMapper;
-import com.xue.po.Student;
+import com.xue.dao.TeacherMapper;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
@@ -15,7 +15,7 @@ public class Main {
         SqlSessionFactory factory=new SqlSessionFactoryBuilder().build(in);
         SqlSession session=factory.openSession();
         StudentMapper studentMapper=session.getMapper(StudentMapper.class);
-        HobbyMapper hobbyMapper=session.getMapper(HobbyMapper.class);
+        TeacherMapper teacherMapper=session.getMapper(TeacherMapper.class);
         /*Student student=new Student();
         student.setSid(78);
         student.setSname("laowang");
@@ -23,8 +23,6 @@ public class Main {
         student.setSsex("男");
         int x=mapper.insertStudent(student);
         System.out.println(x);*/
-        //Hobby hobby=hobbyMapper.selectByPrimaryKeyWithStudent(1);
-        Student student=studentMapper.selectByPrimaryKeyWithHobby(5);
         session.commit();
         session.close();
     }

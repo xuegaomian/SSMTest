@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="ssm_demo@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.4">
+    <root id="1"/>
+    <schema id="2" parent="1" name="ssm_demo">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="1602"/>
+    <schema id="4" parent="1" name="1603"/>
+    <schema id="5" parent="1" name="auth"/>
+    <schema id="6" parent="1" name="db_blog"/>
+    <schema id="7" parent="1" name="information_schema"/>
+    <schema id="8" parent="1" name="irelandlight_weixin"/>
+    <schema id="9" parent="1" name="ireland_light"/>
+    <schema id="10" parent="1" name="mysql"/>
+    <schema id="11" parent="1" name="performance_schema"/>
+    <schema id="12" parent="1" name="test7.19"/>
+    <schema id="13" parent="1" name="user"/>
+    <schema id="14" parent="1" name="video"/>
+    <schema id="15" parent="1" name="weddingdressshop"/>
+    <table id="16" parent="2" name="student"/>
+    <table id="17" parent="2" name="teacher"/>
+    <column id="18" parent="16" name="Sid">
+      <Position>1</Position>
+      <DataType>int(10)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="19" parent="16" name="Sname">
+      <Position>2</Position>
+      <DataType>varchar(10)|0</DataType>
+    </column>
+    <column id="20" parent="16" name="Sage">
+      <Position>3</Position>
+      <DataType>int(10)|0</DataType>
+    </column>
+    <column id="21" parent="16" name="Ssex">
+      <Position>4</Position>
+      <DataType>varchar(10)|0</DataType>
+    </column>
+    <column id="22" parent="16" name="Tid">
+      <Position>5</Position>
+      <DataType>int(10)|0</DataType>
+    </column>
+    <key id="23" parent="16" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>Sid</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="24" parent="17" name="Tid">
+      <Position>1</Position>
+      <DataType>int(10)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="25" parent="17" name="Tname">
+      <Position>2</Position>
+      <DataType>varchar(10)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="26" parent="17" name="username">
+      <Position>3</Position>
+      <DataType>varchar(10)|0</DataType>
+    </column>
+    <column id="27" parent="17" name="password">
+      <Position>4</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <key id="28" parent="17" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>Tid</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>

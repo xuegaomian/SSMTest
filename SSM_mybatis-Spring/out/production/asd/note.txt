@@ -1,0 +1,19 @@
+spring post请求：
+@Controller
+@RequestMapping("user")   //访问路径
+public class UserController{
+    //String类型返回到页面
+    @RequestMapping("/test/{id}/{name}")//    如/user/test请求会请求道该类的该方法  {表示get请求传入的参数}
+    public String testUser(ModelMap modelMap, @PathVariable("id") int ids, @PathVariable String name){
+        return "redirect：页面名称"    //redirect表示重定向
+    }
+
+    //接收form表单
+     //post请求 方法用HTTPServletRequest 参数接收
+        @RequestMapping("/demo")
+        public String demo(HttpServletRequest request, User user){
+            String id=request.getParameter("id");
+            String name=request.getParameter("name");
+            System.out.println("id="+id+"name="+name);
+            return "postDemo";
+        }
