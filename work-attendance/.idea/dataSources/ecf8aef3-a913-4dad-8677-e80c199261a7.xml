@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="work_attendance@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.4">
+    <root id="1"/>
+    <schema id="2" parent="1" name="work_attendance">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="1602"/>
+    <schema id="4" parent="1" name="1603"/>
+    <schema id="5" parent="1" name="auth"/>
+    <schema id="6" parent="1" name="db_blog"/>
+    <schema id="7" parent="1" name="information_schema"/>
+    <schema id="8" parent="1" name="irelandlight_weixin"/>
+    <schema id="9" parent="1" name="ireland_light"/>
+    <schema id="10" parent="1" name="mysql"/>
+    <schema id="11" parent="1" name="performance_schema"/>
+    <schema id="12" parent="1" name="ssm_demo"/>
+    <schema id="13" parent="1" name="test7.19"/>
+    <schema id="14" parent="1" name="user"/>
+    <schema id="15" parent="1" name="video"/>
+    <schema id="16" parent="1" name="weddingdressshop"/>
+    <table id="17" parent="2" name="user"/>
+    <column id="18" parent="17" name="id">
+      <Position>1</Position>
+      <DataType>bigint(20)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="19" parent="17" name="username">
+      <Position>2</Position>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="20" parent="17" name="password">
+      <Position>3</Position>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="21" parent="17" name="real_name">
+      <Position>4</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="22" parent="17" name="mobile">
+      <Position>5</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="23" parent="17" name="head_image">
+      <Position>6</Position>
+      <DataType>varchar(100)|0</DataType>
+    </column>
+    <key id="24" parent="17" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
