@@ -42,7 +42,10 @@
     <!--fastJSON组件-->
     <mvc:annotation-driven>
         <mvc:message-converters>
-            <bean id="fastJsonHttpMessageConverter" class="com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter">
+            <!--如果给前端传一个string就不转成JSON-->
+            <bean class="org.springframework.http.converter.StringHttpMessageConverter"/>
+            <!--将数据进行JSON转换-->
+            <bean class="com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter">
                 <property name="supportedMediaTypes">
                     <list>
                         <!--注意这两个顺序不能反-->

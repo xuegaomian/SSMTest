@@ -20,7 +20,7 @@ public class SessionInterceptor implements HandlerInterceptor {
         if(user!=null){
             return true;
         }
-        request.getRequestDispatcher("login").forward(request,response);
+        request.getRequestDispatcher("/login").forward(request,response);
         return false;
     }
 

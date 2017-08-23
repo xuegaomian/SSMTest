@@ -39,7 +39,7 @@ public class LoginController {
             if (SecurityUtils.checkPasswprd(password,user.getPassword())){
                 //设置session
                 request.getSession().setAttribute("userinfo",user);
-                return "login_succe";
+                return "login_succ";
 
             }else{
                 return "login_error";
