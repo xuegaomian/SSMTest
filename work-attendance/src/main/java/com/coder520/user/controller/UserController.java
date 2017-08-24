@@ -23,4 +23,25 @@ public class UserController {
         return  user;
     }
 
+    /*
+     *@Author:XueGaoMian
+     *@Date:2017/8/24 9:40
+     *@MethordDescription:退出系统
+     */
+    @RequestMapping("/logout")
+    public String logout(HttpSession session){
+        session.invalidate();
+        return "login";
+    }
+
+    /*
+     *@Author:XueGaoMian
+     *@Date:2017/8/24 9:48
+     *@MethordDescription:进入打卡记录页面
+     */
+    @RequestMapping("/attend")
+    public String attend(){
+        return "attend";
+    }
+
 }

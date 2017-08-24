@@ -31,7 +31,7 @@
         Ҳ����ʹ�á�MAVEN�����Զ����ɣ��������ɵĴ������target/generatord-sourceĿ¼��    
         -->    
         <!--<javaModelGenerator targetPackage="com.joey.mybaties.test.pojo" targetProject="MAVEN">-->    
-        <javaModelGenerator targetPackage="com.coder520.user.entity"
+        <javaModelGenerator targetPackage="com.coder520.attend.entity"
                             targetProject="E:\ideaTest\SSMTest\work-attendance\src\main\java">
             <property name="enableSubPackages" value="true"/>    
             <!-- �����ݿⷵ�ص�ֵ������ǰ��Ŀո�  -->    
@@ -39,18 +39,18 @@
         </javaModelGenerator>    
     
         <!--��Ӧ��mapper.xml�ļ�  -->    
-        <sqlMapGenerator targetPackage="com.coder520.user.dao" targetProject="E:\ideaTest\SSMTest\work-attendance\src\main\java">
+        <sqlMapGenerator targetPackage="com.coder520.attend.dao" targetProject="E:\ideaTest\SSMTest\work-attendance\src\main\java">
             <property name="enableSubPackages" value="true"/>    
         </sqlMapGenerator>    
     
         <!-- ��Ӧ��Mapper�ӿ����ļ� -->    
-        <javaClientGenerator type="XMLMAPPER" targetPackage="com.coder520.user.dao" targetProject="E:\ideaTest\SSMTest\work-attendance\src\main\java">
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.coder520.attend.dao" targetProject="E:\ideaTest\SSMTest\work-attendance\src\main\java">
             <property name="enableSubPackages" value="true"/>    
         </javaClientGenerator>    
     
     
         <!-- �г�Ҫ���ɴ�������б��������õ��ǲ�����Example�ļ� -->    
-        <table tableName="user" domainObjectName="User"
+        <table tableName="attend" domainObjectName="Attend"
                enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"    
                enableSelectByExample="false" selectByExampleQueryId="false" >    
             <property name="useActualColumnNames" value="false"/>    

@@ -24,8 +24,16 @@ public class LoginController {
         return "login";
     }
 
+
+    /*
+     *@MethorName:checkLogin
+     *@Author:XueGaoMian
+     *@Date:2017/8/24 9:28
+     *@MethordDescription:登录验证密码
+     */
     @ResponseBody//没有该注解就会默认找页面
     @RequestMapping("/check")
+
     public String checkLogin(HttpServletRequest request) throws UnsupportedEncodingException, NoSuchAlgorithmException {
         String username=request.getParameter("username");
         String password=request.getParameter("password");
